@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+    width: 80%;
+    margin: 25px auto;
+    padding: 50px 0;
+    background-image: url(./images/plant.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    @media (max-width: 576px) {
+        width: 90%;
+        margin: 15px auto;
+        padding: 25px 0;
+    }
+}
+.title{
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    @media (max-width: 768px) {
+        width: 60%;
+        padding: 5px;
+        font-size: 24px;
+    }
+}
+.input-container{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 5px;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: 25px auto 0;
+    @media (max-width: 768px) {
+        width: 90%;
+        font-size: 12px;
+    }
+}
+#taskInput{
+    width: 70%;
+    padding: 5px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid green;
+}
+#addButton{
+    width: 29%;
+    padding: 10px 0;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 25px;
+    @media (max-width: 576px) {
+        padding: 5px 0;
+    }
+}
+.task-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+.task{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(143, 188, 143, 0.5);
+    border-radius: 25px;
+    text-align: left;
+    list-style: none;
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+.task:hover{
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+}
